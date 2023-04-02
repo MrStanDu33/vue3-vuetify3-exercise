@@ -12,7 +12,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     '@vue/eslint-config-airbnb-with-typescript',
-    'plugin:jsdoc/recommended',
+    'plugin:jsdoc/recommended-typescript-error',
     'plugin:prettier/recommended',
   ],
   parserOptions: {

@@ -1,9 +1,17 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*.ts", "src/**/*.vue", "src/router/index.ts"],
+  "include": [
+    "env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.vue",
+    "src/router/index.ts",
+    "src/event.d.tsd.ts"
+  ],
   "module": "esnext",
   "compilerOptions": {
     "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
     "baseUrl": ".",
     "ignoreDeprecations": "5.0",
     "paths": {

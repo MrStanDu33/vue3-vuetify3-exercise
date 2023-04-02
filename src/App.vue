@@ -6,5 +6,8 @@
 </script>
 
 <template>
-  <router-view></router-view>
+  <h1>test</h1>
+  <v-theme-provider theme="high-contrast">
+    <router-view></router-view
+  ></v-theme-provider>
 </template>
