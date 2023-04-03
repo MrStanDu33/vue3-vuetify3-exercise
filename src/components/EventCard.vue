@@ -197,10 +197,10 @@ const addEventToCalendarLink = computed(() => {
 }
 
 .event-card-cover-container {
-  width: 564px;
+  width: 564px !important;
   height: 320px;
   position: relative;
-  flex-basis: auto;
+  flex-basis: auto !important;
 }
 
 .event-card-cover-image {
