@@ -24,9 +24,11 @@ const getCroppedDate = (date: Date): string => {
 
 const props = defineProps<{
   event: CalendarEvent | null;
+  primary: undefined | string;
+  primaryLighten: undefined | string;
 }>();
 
-const { event } = toRefs(props);
+const { event, primary, primaryLighten } = toRefs(props);
 
 const eventStartDateVerbose = computed(() =>
   event.value ? getCroppedDate(new Date(event.value.begin_at)) : null,
@@ -87,7 +89,7 @@ const addEventToCalendarLink = computed(() => {
             {{ event.title }}
           </v-card-title>
           <v-chip
-            color="primary-lighten"
+            :color="primaryLighten || 'primary-lighten'"
             class="event-card-date mt-5 font-weight-black text-uppercase d-block py-1"
             size="x-small"
             :href="addEventToCalendarLink"
@@ -126,7 +128,7 @@ const addEventToCalendarLink = computed(() => {
             <template v-slot:prepend>
               <v-icon
                 icon="mdi-map-marker-outline"
-                color="primary"
+                :color="primary || 'primary'"
                 class="mr-2"
               />
             </template>
@@ -141,18 +143,21 @@ const addEventToCalendarLink = computed(() => {
             v-if="event.is_webinar"
           >
             <template v-slot:prepend>
-              <v-icon icon="mdi-video-outline" color="primary" class="mr-2" />
+              <v-icon
+                icon="mdi-video-outline"
+                :color="primary || 'primary'"
+                class="mr-2"
+              />
             </template>
             Disponible en ligne
           </v-chip>
 
           <v-card-actions class="mt-auto px-0">
             <v-btn
-              class="px-4 text-none"
+              class="px-4 text-none text-white"
               variant="flat"
-              color="primary"
+              :color="primary || 'primary'"
               rounded="xl"
-              text-color="white"
               :href="event.web_url"
             >
               En savoir plus

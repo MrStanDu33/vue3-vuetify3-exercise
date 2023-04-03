@@ -6,8 +6,11 @@
 </script>
 
 <template>
-  <h1>test</h1>
-  <v-theme-provider theme="high-contrast">
-    <router-view></router-view
-  ></v-theme-provider>
+  <v-app>
+    <v-main>
+      <v-theme-provider theme="high-contrast">
+        <router-view></router-view>
+      </v-theme-provider>
+    </v-main>
+  </v-app>
 </template>
