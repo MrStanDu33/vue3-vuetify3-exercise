@@ -1,7 +1,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/mrstandu33/vue3-vuetify3-exercise/master)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mrstandu33/vue3-vuetify3-exercise)
 
-[![wakatime](https://wakatime.com/badge/user/06011a48-a97d-4bc2-a58e-60ce7ff5a743/project/63dc64b4-faa4-4d77-8381-5655bb4a90b7.svg)](https://wakatime.com/@MrStanDu33/projects/kmckhgmulb?start=2023-04-02&end=2023-04-03)
+[![wakatime](https://wakatime.com/badge/user/06011a48-a97d-4bc2-a58e-60ce7ff5a743/project/c007ae98-8f84-4217-a327-0f2d4fc51a1b.svg)](https://wakatime.com/@MrStanDu33/projects/hxmggiudps?start=2023-04-01&end=2023-04-03)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/64961ca4c11d41ffa68375c287c80e0c)](https://app.codacy.com/gh/MrStanDu33/vue3-vuetify3-exercise/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 # Vue.js 3 x Vuetify 3 exercise
