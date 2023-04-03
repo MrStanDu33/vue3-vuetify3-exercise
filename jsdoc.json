@@ -7,11 +7,7 @@
     "includePattern": "\\.(vue|js)$",
     "excludePattern": "(node_modules/|docs)"
   },
-  "plugins": [
-    "plugins/markdown",
-    "node_modules/better-docs/typedef-import",
-    "node_modules/jsdoc-vuejs"
-  ],
+  "plugins": ["plugins/markdown", "node_modules/jsdoc-vuejs"],
   "opts": {
     "encoding": "utf8",
     "template": "node_modules/clean-jsdoc-theme",
