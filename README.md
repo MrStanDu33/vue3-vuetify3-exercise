@@ -1,3 +1,9 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/mrstandu33/vue3-vuetify3-exercise/master)
+![GitHub repo size](https://img.shields.io/github/repo-size/mrstandu33/vue3-vuetify3-exercise)
+
+[![wakatime](https://wakatime.com/badge/github/MrStanDu33/vue3-vuetify-exercise.svg)](https://wakatime.com/badge/github/MrStanDu33/vue3-vuetify-exercise)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/64961ca4c11d41ffa68375c287c80e0c)](https://app.codacy.com/gh/MrStanDu33/vue3-vuetify3-exercise/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 # Vue.js 3 x Vuetify 3 exercise
 
 This template should help get you started developing with Vue 3 in Vite.
