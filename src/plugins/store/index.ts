@@ -2,6 +2,7 @@
  * @file Store initialization.
  * @author DANIELS-ROTH Stan <contact@daniels-roth-stan.fr>
  */
+// @ts-ignore
 /// <reference path="../event.d.ts"/>
 import axios from '@/axios';
 import { createStore } from 'vuex';

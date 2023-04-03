@@ -6,7 +6,8 @@
     "src/**/*.js",
     "src/**/*.vue",
     "src/plugins/router/index.ts",
-    "src/event.d.tsd.ts"
+    "src/event.d.tsd.ts",
+    ".storybook/**/*.ts"
   ],
   "module": "esnext",
   "compilerOptions": {

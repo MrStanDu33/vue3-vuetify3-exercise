@@ -22,11 +22,17 @@ const getCroppedDate = (date: Date): string => {
   }`;
 };
 
-const props = defineProps<{
-  event: CalendarEvent | null;
-  primary: undefined | string;
-  primaryLighten: undefined | string;
-}>();
+const props = withDefaults(
+  defineProps<{
+    event: CalendarEvent | null;
+    primary: void | string;
+    primaryLighten: undefined | string;
+  }>(),
+  {
+    primary: 'primary',
+    primaryLighten: 'primaryLighten',
+  },
+);
 
 const { event, primary, primaryLighten } = toRefs(props);
 

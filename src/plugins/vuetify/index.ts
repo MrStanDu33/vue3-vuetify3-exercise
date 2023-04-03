@@ -8,7 +8,6 @@ import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import '@mdi/font/css/materialdesignicons.css';
 import { createVuetify } from 'vuetify';
-// Ensure you are using css-
 import type { ThemeDefinition } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi';
 import 'vuetify/styles';

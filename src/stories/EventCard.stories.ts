@@ -2,7 +2,7 @@
  * @file Home Page component story configuration.
  * @author DANIELS-ROTH Stan <contact@daniels-roth-stan.fr>
  */
-import type { Meta, StoryFn, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryFn } from '@storybook/vue3';
 
 import EventCard from './EventCard.vue';
 
@@ -54,9 +54,16 @@ const meta = {
 
 export default meta;
 
-type Story = StoryObj<typeof meta>;
-
-const Template: StoryFn<typeof EventCard> = (args, { argTypes }) => ({
+/**
+ * @description EventCard story wrapper.
+ *
+ * @param   { any }                     _args             - Arguments.
+ * @param   {object}                    settings          - Setting object.
+ * @param   {object}                    settings.argTypes - List of story arguments.
+ *
+ * @returns {StoryFn<typeof EventCard>}                   - Story object.
+ */
+const Template: StoryFn<typeof EventCard> = (_args, { argTypes }) => ({
   components: { EventCard },
   props: Object.keys(argTypes),
   template: '<EventCard v-bind="$props" />',

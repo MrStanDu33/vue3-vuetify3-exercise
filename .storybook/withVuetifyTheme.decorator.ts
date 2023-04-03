@@ -2,7 +2,7 @@ import { h } from 'vue';
 
 import StoryWrapper from './StoryWrapper.vue';
 
-export const withVuetifyTheme = (storyFn, context) => {
+export const withVuetifyTheme = (storyFn: any, context: any) => {
   const story = storyFn();
 
   return () => {
