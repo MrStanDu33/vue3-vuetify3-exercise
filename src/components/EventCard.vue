@@ -79,6 +79,14 @@ const addEventToCalendarLink = computed(() => {
     :loading="event == null"
     class="event-card elevation-4 rounded-lg d-flex flex-wrap justify-space-between"
   >
+    <template v-slot:loader="{ isActive }">
+      <v-progress-linear
+        :active="isActive"
+        :color="primary || 'primary'"
+        height="4"
+        indeterminate
+      ></v-progress-linear>
+    </template>
     <v-container :fluid="true" class="pa-0">
       <v-row :no-gutters="true" class="flex-wrap-reverse fill-height">
         <v-col

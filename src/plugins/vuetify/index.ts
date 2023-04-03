@@ -2,6 +2,10 @@
  * @file Vuetify configuration.
  * @author DANIELS-ROTH Stan <contact@daniels-roth-stan.fr>
  */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as components from 'vuetify/components';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as directives from 'vuetify/directives';
 import '@mdi/font/css/materialdesignicons.css';
 import { createVuetify } from 'vuetify';
 // Ensure you are using css-

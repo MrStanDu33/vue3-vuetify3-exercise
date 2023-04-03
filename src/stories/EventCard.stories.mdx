@@ -1,0 +1,146 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+import * as stories from './EventCard.stories.ts';
+
+<Meta title="Components/EventCard" />
+
+# EventCard
+
+EventCard is a component used to display a given event's informations.
+
+This component follows the application's vuetify theme, but can also be
+configured to display custom colors for the date and button elements.
+
+<Story id="components-eventcard--event-is-webinar" />
+
+<br />
+
+## Features
+
+This component comes with many quality of life features.
+
+### Add event to calendar
+
+When the user clicks on the event date, a Google Agenda window is open and asks
+user if he wants to save the event to his calendar.
+
+The start and end of the calendar event is set to the start and end times of the event.
+
+A link is also provided to the calendar event description to the webinar link.
+
+### Cropped event description
+
+As we want the event cover to be displayed with the same aspect ratio every time,
+we must reduce the width of the event description in order to have a responsive element.
+
+In order to not having text overflowing and breaking the component display,
+a maximum of 4 lines can be shown in the event description, after what an ellipsis shows up.
+
+### View location
+
+When the user clicks on the event location, a new tab opens with Google Map being
+automatically centered on the event location. It is based on the address,
+the complementary address, the zip code and the city name.
+
+### View more information
+
+When the user clicks on the main button, he is redirected to the event website.
+It is based on the `event.web_url` property.
+
+## Customization
+
+### Event loading
+
+By setting the EventCard prop `event` to `null`, we enable the loading mode of the
+component. This displays an infinite loading bar.
+
+```html
+<template>
+  <EventCard :event="null" />
+</template>
+```
+
+<Story id="components-eventcard--event-loading" />
+
+<br />
+
+### Is a webinar
+
+If the displayed event is a webinar (`event.is_webinar: true`), then an Icon is
+displayed to inform user that the event is a webinar.
+
+```html
+<script setup lang="ts">
+  const event = {
+    // ...
+    is_webinar: true,
+  };
+</script>
+
+<template>
+  <EventCard :event="event" />
+</template>
+```
+
+<Story id="components-eventcard--event-is-webinar" />
+
+<br />
+
+### Is not a webinar
+
+If the displayed event is not a webinar (`event.is_webinar: false`), then the
+webinar icon is not displayed.
+
+```html
+<script setup lang="ts">
+  const event = {
+    // ...
+    is_webinar: false,
+  };
+</script>
+
+<template>
+  <EventCard :event="event" />
+</template>
+```
+
+<Story id="components-eventcard--event-is-not-webinar" />
+
+<br />
+
+### Color theme
+
+This component is themable by two different ways.
+Color customization helps changing the color of the event time box, all icons
+and the main button.
+
+1. We can configure the theme's color in
+   [vuetify configuration file](https://vuetifyjs.com/en/features/theme/).
+2. We can override the configured theme by using the `primary` and `primaryLighten`
+   props. They accept color names [as defined here](https://vuetifyjs.com/en/styles/colors/)
+   or hexadecimal color codes.
+
+```html
+<script setup lang="ts">
+  const event = {
+    // ...
+  };
+</script>
+
+<template>
+  <EventCard :event="event" :primary="#2b47fb" :primaryLighten="#202656" />
+</template>
+```
+
+<Story id="components-eventcard--event-is-webinar-custom-colors" />
+
+Note that the theme is also applied to the infinite loading bar displayed at the
+top of the EventCard.
+
+```html
+<template>
+  <EventCard :event="null" :primary="#2b47fb" :primaryLighten="#202656" />
+</template>
+```
+
+<Story id="components-eventcard--event-loading-custom-colors" />

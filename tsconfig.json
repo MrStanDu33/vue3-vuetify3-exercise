@@ -5,7 +5,7 @@
     "src/**/*.ts",
     "src/**/*.js",
     "src/**/*.vue",
-    "src/router/index.ts",
+    "src/plugins/router/index.ts",
     "src/event.d.tsd.ts"
   ],
   "module": "esnext",

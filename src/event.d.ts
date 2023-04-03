@@ -49,7 +49,7 @@ type CalendarEvent = {
       };
     };
     status: {
-      id: 1;
+      id: number;
       name: string;
       label: string;
       _links: {
