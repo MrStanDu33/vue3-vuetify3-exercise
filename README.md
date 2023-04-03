@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/mrstandu33/vue3-vuetify3-exercise/master)
+![GitHub last commit](https://img.shields.io/github/last-commit/mrstandu33/vue3-vuetify3-exercise/main)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mrstandu33/vue3-vuetify3-exercise)
 
 [![wakatime](https://wakatime.com/badge/user/06011a48-a97d-4bc2-a58e-60ce7ff5a743/project/c007ae98-8f84-4217-a327-0f2d4fc51a1b.svg)](https://wakatime.com/@MrStanDu33/projects/hxmggiudps?start=2023-04-01&end=2023-04-03)
